@@ -11,7 +11,7 @@ void main() {
     SumDivisibles calculator = SumDivisibles.getInstance();
 
     // Chamando o método 'sum' da instância com o argumento X.
-    int result = calculator.sum(11);
+    int result = calculator.sum(-11);
 
     // Imprimindo o resultado no console para visualização durante a execução do teste.
     print("result: $result");

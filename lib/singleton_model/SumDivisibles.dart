@@ -19,6 +19,13 @@ class SumDivisibles {
 
   // Método que calcula o somatório de números divisíveis por 3 ou 5 até o número fornecido
   int sum(int numero) {
+    
+    // Verifica se o número fornecido é menor ou igual a 0
+    if (numero <= 0) {
+      // Chama o método de validação em caso de erro
+      validation();
+    }
+
     // Variável para armazenar o resultado do somatório
     int resultado = 0;
 
@@ -33,5 +40,13 @@ class SumDivisibles {
 
     // Retorna o resultado final do somatório
     return resultado;
+  }
+
+  // Método de validação para tratar casos em que o número fornecido é menor ou igual a 0
+  String validation() {
+    // Imprime uma mensagem de erro
+    print('ERRO: Digite um numero maior que [ 0 ]');
+    // Lança uma exceção para indicar um erro
+    throw Exception();
   }
 }
